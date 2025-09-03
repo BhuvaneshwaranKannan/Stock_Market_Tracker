@@ -9,7 +9,7 @@ public class MainApp {
     public static void main(String[] args) throws UnsupportedEncodingException {
         try (Scanner input = new Scanner(System.in)) {
 
-            System.out.println(Colors.yellow + "<---------------Stock Market Tracker--------------->" + Colors.reset);
+            System.out.println(Colors.yellow + "\n<---------------Stock Market Tracker--------------->" + Colors.reset);
             boolean running = true;
             while (running) {
                 System.out.println(
@@ -212,10 +212,10 @@ public class MainApp {
                                 if (toRemove != null) {
                                     watchList.remove(toRemove);
                                     System.out.println("\n" + Colors.yellow + rcompany.name + "(" + rcompany.symbol
-                                            + ")" + Colors.reset + Colors.red + " remove from your watchlist!"
+                                            + ")" + Colors.reset + Colors.red + " removed from your watchlist!"
                                             + Colors.reset);
                                 } else {
-                                    System.out.println(Colors.red + "Company name already not exist in your watchList!"
+                                    System.out.println(Colors.red + "Company not exist in your watchList!"
                                             + Colors.reset);
                                 }
                             }
